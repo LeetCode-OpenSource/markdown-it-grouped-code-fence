@@ -2,6 +2,7 @@ node_modules
 .idea
 /src
 /demo
+/playground
 .prettierrc
 tsconfig.json
 tsconfig.build.json
