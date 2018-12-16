@@ -19,6 +19,8 @@ export const Bar = styled(ResizerBar)({
 
 export const Section = styled(ResizerSection)({
   zIndex: 0,
+  height: '100%',
+  overflow: 'auto',
 });
 
 export const MarkDown = styled.div({

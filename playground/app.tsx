@@ -7,7 +7,7 @@ import 'codemirror/mode/markdown/markdown.js';
 
 import { groupedCodeFencePlugin } from '../src';
 import { Editor, Section, Bar, MarkDown, GroupClassName } from './styled';
-import example from './example.md';
+import README from '../README.md';
 
 const md = new MD();
 
@@ -23,7 +23,7 @@ interface State {
 
 class Edit extends React.PureComponent<{}, State> {
   state: State = {
-    value: example,
+    value: README,
   };
 
   render() {
@@ -42,7 +42,7 @@ class Edit extends React.PureComponent<{}, State> {
                 lineWrapping: true,
                 indentWithTabs: false,
               }}
-              value={example}
+              value={README}
               onChange={this.onChange}
             />
           </Editor>
