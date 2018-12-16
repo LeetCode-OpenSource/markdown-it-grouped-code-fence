@@ -1,17 +1,24 @@
 # markdown-it-grouped-code-fence
-The _grouped code fence_ is almost the same as [code fence](https://spec.commonmark.org/0.28/#code-fence). The only difference is that you can use a syntax, __`keyword-title` within a pair of brackets__ , in the [info string](https://spec.commonmark.org/0.28/#info-string) to combine multiple code fence into a single group. In a Markdown renderer that does not support this syntax, will ignore the syntax and render it as a normal code fence.
+
+_Grouped code fence_ is almost the same as [code fence](https://spec.commonmark.org/0.28/#code-fence). The only difference is that you can use a syntax, __`keyword-title` within a pair of brackets__ , in the [info string](https://spec.commonmark.org/0.28/#info-string) to combine multiple code fence into a single group. In a Markdown renderer that does not support this syntax, will ignore the syntax and render it as a normal code fence.
+
 
 ## Syntax
 ~~~
 ```language [keyword-title]
 ```
 ~~~
+
 #### `keyword`
 Optional, Used to distinguish between different groups. default will consider as a anonymous group.
+
 #### `title`
 Optional, Used to customize the title of each code fence. default will using the language name.
 
+
 ## Examples
+Go to [Playground](https://leetcode-opensource.github.io/markdown-it-grouped-code-fence/) to see the output.
+
 ### Use keywords to distinguish between different groups
 ~~~
 ```ruby [printA]
@@ -26,6 +33,7 @@ Optional, Used to customize the title of each code fence. default will using the
   console.log('B')
 ```
 ~~~
+
 ##### output:
 ```ruby [printA]
   puts 'A'
@@ -39,10 +47,11 @@ Optional, Used to customize the title of each code fence. default will using the
   console.log('B')
 ```
 
+
 ### Anonymous group
 ~~~
 ```ruby []
-  print 'Hello world!'
+  put 'Hello world!'
 ```
 
 ```python [-python3]
@@ -56,7 +65,7 @@ Optional, Used to customize the title of each code fence. default will using the
 
 ##### output:
 ```ruby []
-  print 'Hello world!'
+  put 'Hello world!'
 ```
 
 ```python [-python3]
@@ -66,6 +75,7 @@ Optional, Used to customize the title of each code fence. default will using the
 ```javascript []
   console.log('Hello world!')
 ```
+
 
 ## Installation
 
