@@ -48,9 +48,9 @@ export class List {
   add({
     inputID,
     inputName,
-    language: labelText,
+    title,
   }: {
-    language: string;
+    title: string;
     inputID: string;
     inputName: string;
   }) {
@@ -59,7 +59,7 @@ export class List {
       ...makeLabelTokens({
         inputID,
         inputName,
-        labelText,
+        labelText: title,
         level: this.listChildLevel,
         radioClassName: this.className.labelRadio,
         isCheckedByDefault: this.isEmptyList,

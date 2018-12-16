@@ -1,17 +1,32 @@
 import Token from 'markdown-it/lib/token';
 import { Nesting, TokenObject, TokenInfo, Attrs } from './types';
 
-const GROUP_SCOPE_REGEX = / \[([^\[\]]*)]/; // group can not be language, so there have a space before `group`
+const GROUP_REGEX = / \[([^\[\]]*)]/; // group can not be language, so there have a space before `group`
 const LANGUAGE_REGEX = /^[^ ]+/;
 
-export const filterTokenInfo = (info: string): TokenInfo => {
-  const scopeResult = GROUP_SCOPE_REGEX.exec(info);
-  const languageResult = LANGUAGE_REGEX.exec(info);
+function filterGroupResult(
+  info: string,
+): { scope: string | null; title: string | null } {
+  const regexResult = GROUP_REGEX.exec(info);
 
-  const scope = scopeResult && (scopeResult[1] || '');
+  if (regexResult) {
+    const [scope, title] = (regexResult[1] || '').split('-');
+    return { scope, title };
+  } else {
+    return {
+      scope: null,
+      title: null,
+    };
+  }
+}
+
+export const filterTokenInfo = (info: string): TokenInfo => {
+  const languageResult = LANGUAGE_REGEX.exec(info);
   const language = (languageResult && languageResult[0]) || '';
 
-  return { scope, language };
+  const { scope, title } = filterGroupResult(info);
+
+  return { scope, title: title || language };
 };
 
 export function makeToken({ type, tag, nesting, ...restValue }: TokenObject) {

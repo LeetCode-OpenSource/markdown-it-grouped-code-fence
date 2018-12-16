@@ -22,7 +22,7 @@ export type TokenObject = {
 
 export interface TokenInfo {
   scope: string | null;
-  language: string;
+  title: string;
 }
 
 export interface Config {

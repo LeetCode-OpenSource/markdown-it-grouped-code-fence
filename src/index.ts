@@ -12,13 +12,13 @@ function groupedCodeFence(config: Config, state: StateCore) {
 
   state.tokens.forEach((token, index) => {
     const isEnd = index === maxIndex;
-    const { scope: currentGroupScope, language } = filterTokenInfo(token.info);
+    const { scope: currentGroupScope, title } = filterTokenInfo(token.info);
 
     if (prevGroupScope === currentGroupScope) {
       const isInCurrentGroup = currentGroupScope !== null;
 
       if (isInCurrentGroup) {
-        tokenCollector.addTokenIntoCurrentGroup(token, language, isEnd);
+        tokenCollector.addTokenIntoCurrentGroup(token, title, isEnd);
       } else {
         tokenCollector.addToken(token);
       }
@@ -32,7 +32,7 @@ function groupedCodeFence(config: Config, state: StateCore) {
       } else {
         const prevGroupNeedToBeClosed = prevGroupScope !== null;
         tokenCollector.startNewGroup(token.level, prevGroupNeedToBeClosed);
-        tokenCollector.addTokenIntoCurrentGroup(token, language, isEnd);
+        tokenCollector.addTokenIntoCurrentGroup(token, title, isEnd);
       }
     }
 

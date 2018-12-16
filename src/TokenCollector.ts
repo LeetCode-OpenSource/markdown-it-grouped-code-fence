@@ -55,7 +55,7 @@ export class TokenCollector {
 
   addTokenIntoCurrentGroup(
     token: Token,
-    language: string,
+    title: string,
     closeGroupAfterAddingToken: boolean,
   ) {
     if (this.isGroupClosed) {
@@ -77,7 +77,7 @@ export class TokenCollector {
 
     const fenceToken = makeNestedToken({ token, nestLevel: 1 });
 
-    this.list!.add({ language, inputID, inputName });
+    this.list!.add({ title, inputID, inputName });
     this.tokens.push(fenceRadioToken, fenceToken);
 
     if (closeGroupAfterAddingToken) {
