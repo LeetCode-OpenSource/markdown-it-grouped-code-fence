@@ -42,6 +42,9 @@
       "git add"
     ]
   },
+  "assetTypesToStringify": [
+    "md"
+  ],
   "devDependencies": {
     "@emotion/core": "^10.0.5",
     "@emotion/styled": "^10.0.5",
@@ -57,7 +60,8 @@
     "markdown-it": "^8.4.2",
     "normalize.css": "^8.0.1",
     "parcel": "^1.10.3",
-    "parcel-plugin-markdown-string": "^1.3.3",
+    "parcel-bundler": "^1.10.3",
+    "parcel-plugin-stringify-anything": "^1.2.0",
     "prettier": "1.15.3",
     "react": "^16.6.3",
     "react-codemirror2": "^5.1.0",

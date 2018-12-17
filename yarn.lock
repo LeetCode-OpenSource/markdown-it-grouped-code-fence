@@ -3648,11 +3648,6 @@ markdown-it@^8.4.2:
     mdurl "^1.0.1"
     uc.micro "^1.0.5"
 
-marked@^0.5.1:
-  version "0.5.2"
-  resolved "https://registry.npmjs.org/marked/-/marked-0.5.2.tgz#3efdb27b1fd0ecec4f5aba362bddcd18120e5ba9"
-  integrity sha512-fdZvBa7/vSQIZCi4uuwo2N3q+7jJURpMVCcbaX0S1Mg65WZ5ilXvC67MviJAsdjqqgD+CEq4RKo5AYGgINkVAA==
-
 matcher@^1.0.0:
   version "1.1.1"
   resolved "https://registry.npmjs.org/matcher/-/matcher-1.1.1.tgz#51d8301e138f840982b338b116bb0c09af62c1c2"
@@ -4271,13 +4266,10 @@ parcel-bundler@^1.10.3:
     v8-compile-cache "^2.0.0"
     ws "^5.1.1"
 
-parcel-plugin-markdown-string@^1.3.3:
-  version "1.3.3"
-  resolved "https://registry.npmjs.org/parcel-plugin-markdown-string/-/parcel-plugin-markdown-string-1.3.3.tgz#fd5773e7a2b2be76002bed2f4a8af2edfe5fb581"
-  integrity sha512-Be7WqF1F3gzP2g+nNd3F2sKGhXXCi/2iYH1gMLZ2Ke06yitNaBxR66ZAEeyBokj0secXiu8DrdnHpF5wmxc9fg==
-  dependencies:
-    marked "^0.5.1"
-    parcel-bundler "^1.10.3"
+parcel-plugin-stringify-anything@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/parcel-plugin-stringify-anything/-/parcel-plugin-stringify-anything-1.2.0.tgz#632cf0b87d069d397e31e56ff8b8648abf507d42"
+  integrity sha512-CzDW0cYCt9Pu9XqEFuxDnaksrdWEON8ouKqvHtNQOQ1g5M8D0fTim9cLzjdCmNfDs3iBl/6oiY2k2zaoZ4V6sg==
 
 parcel@^1.10.3:
   version "1.10.3"
