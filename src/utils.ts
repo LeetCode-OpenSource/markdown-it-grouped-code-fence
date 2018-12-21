@@ -1,4 +1,5 @@
-import Token from 'markdown-it/lib/token';
+import Token = require('markdown-it/lib/token');
+
 import { Nesting, TokenObject, TokenInfo, Attrs } from './types';
 
 const GROUP_REGEX = / \[([^\[\]]*)]/; // group can not be language, so there have a space before `group`

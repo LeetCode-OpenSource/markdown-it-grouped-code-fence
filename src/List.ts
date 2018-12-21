@@ -1,4 +1,4 @@
-import Token from 'markdown-it/lib/token';
+import Token = require('markdown-it/lib/token');
 
 import { Config, Nesting } from './types';
 import { makeLabelTokens, makeToken, tokenMaker } from './utils';

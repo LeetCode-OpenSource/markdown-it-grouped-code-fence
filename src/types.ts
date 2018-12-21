@@ -1,4 +1,4 @@
-import Token from 'markdown-it/lib/token';
+import Token = require('markdown-it/lib/token');
 
 export const RULE_NAME = 'GROUPED_CODE_FENCE';
 export const TOKEN_TYPE = `${RULE_NAME}_TYPE`;

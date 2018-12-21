@@ -1,4 +1,4 @@
-import Token from 'markdown-it/lib/token';
+import Token = require('markdown-it/lib/token');
 
 import { List } from './List';
 import {

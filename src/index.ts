@@ -1,5 +1,5 @@
-import * as MarkdownIt from 'markdown-it';
-import StateCore from 'markdown-it/lib/rules_core/state_core';
+import MarkdownIt = require('markdown-it');
+import StateCore = require('markdown-it/lib/rules_core/state_core');
 
 import { RULE_NAME, Config } from './types';
 import { TokenCollector } from './TokenCollector';
