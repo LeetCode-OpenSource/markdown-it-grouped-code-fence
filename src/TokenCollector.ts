@@ -2,13 +2,13 @@ import Token = require('markdown-it/lib/token');
 
 import { List } from './List';
 import {
-  getID,
   getInputID,
   getInputName,
   makeNestedToken,
   makeRadioToken,
   tokenMaker,
 } from './utils';
+import { getAndIncreaseID } from './id';
 import { Config, Nesting, TOKEN_TYPE } from './types';
 
 const makeOpenToken = tokenMaker({
@@ -96,7 +96,7 @@ export class TokenCollector {
       );
     }
 
-    this.currentGroupID = getID();
+    this.currentGroupID = getAndIncreaseID();
     this.currentGroupIndex = this.tokens.length;
 
     this.list = new List(this.config.className, level + 1);

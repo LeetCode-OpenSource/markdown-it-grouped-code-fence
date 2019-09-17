@@ -137,12 +137,3 @@ export function makeLabelTokens({
     }),
   ];
 }
-
-export const getID = (function() {
-  let id = 0;
-
-  return () => {
-    id += 1;
-    return id;
-  };
-})();
