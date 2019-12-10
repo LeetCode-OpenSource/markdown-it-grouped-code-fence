@@ -66,7 +66,7 @@
     "react": "^16.6.3",
     "react-codemirror2": "^5.1.0",
     "react-dom": "^16.6.3",
-    "react-simple-resizer": "^1.2.2",
+    "react-simple-resizer": "^2.1.0",
     "tslib": "^1.9.3",
     "tslint": "^5.11.0",
     "tslint-eslint-rules": "^5.3.1",
