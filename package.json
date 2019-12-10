@@ -64,7 +64,7 @@
     "parcel-plugin-stringify-anything": "^1.2.0",
     "prettier": "1.15.3",
     "react": "^16.6.3",
-    "react-codemirror2": "^5.1.0",
+    "react-codemirror2": "^6.0.0",
     "react-dom": "^16.6.3",
     "react-simple-resizer": "^1.2.2",
     "tslib": "^1.9.3",
