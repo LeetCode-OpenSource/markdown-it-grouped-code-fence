@@ -68,7 +68,7 @@
     "react-dom": "^16.6.3",
     "react-simple-resizer": "^2.1.0",
     "tslib": "^2.0.0",
-    "tslint": "^5.11.0",
+    "tslint": "^6.1.2",
     "tslint-eslint-rules": "^5.3.1",
     "tslint-react": "^4.1.0",
     "tslint-sonarts": "^1.7.0",
