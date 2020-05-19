@@ -864,10 +864,10 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@types/codemirror@^0.0.93":
-  version "0.0.93"
-  resolved "https://registry.yarnpkg.com/@types/codemirror/-/codemirror-0.0.93.tgz#74ce5e1132325cb2c88a9bb91fd819294fe0c8ed"
-  integrity sha512-7F2ksY4U5amV/bIkMTev0n22RWcFO2BBuFuFYmAJIT19gr3kDElr1phgjPsNKV/Pj301bujnMjSy5GlWla+cow==
+"@types/codemirror@^0.0.94":
+  version "0.0.94"
+  resolved "https://registry.yarnpkg.com/@types/codemirror/-/codemirror-0.0.94.tgz#386a74ee1fac9db624be288947df66e3cdb5ad45"
+  integrity sha512-uMf+r8CPbR8sRsFqdoKpE+SqXqTvw/7l21pk31TRSyH0nXKmtcPBW+YAOdBapEctIvwHkFvlybApP4OExE1glA==
   dependencies:
     "@types/tern" "*"
 
