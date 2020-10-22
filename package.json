@@ -65,7 +65,7 @@
     "prettier": "2.1.2",
     "react": "^16.6.3",
     "react-codemirror2": "^7.0.0",
-    "react-dom": "^16.6.3",
+    "react-dom": "^17.0.0",
     "react-simple-resizer": "^2.1.0",
     "tslib": "^2.0.0",
     "tslint": "^6.1.2",
