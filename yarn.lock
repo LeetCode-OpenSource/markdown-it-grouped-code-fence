@@ -857,10 +857,10 @@
     "@parcel/utils" "^1.11.0"
     physical-cpu-count "^2.0.0"
 
-"@types/codemirror@^0.0.101":
-  version "0.0.101"
-  resolved "https://registry.yarnpkg.com/@types/codemirror/-/codemirror-0.0.101.tgz#e9fb6501b3de456e4a23964e8ebecd7a85a93675"
-  integrity sha512-Pd3XNCyjiwZ99YIPSog7ca7LriivT2tfR+TWYcPMdJ7etmyF/QFkBDWjHwlFIpVsHeMQeb48Q3Tr3EHhgE8XFQ==
+"@types/codemirror@^0.0.102":
+  version "0.0.102"
+  resolved "https://registry.yarnpkg.com/@types/codemirror/-/codemirror-0.0.102.tgz#56049f14a85e170fc5b71bd76517089ca74a4036"
+  integrity sha512-WZZW8VL8BAzzAZWkiYnM5VsYz1qWYieRqHPPtC/BB015QXd3LPXtBlbRYA8lauKgM10qWYeLH8p5LsIn2SLXfA==
   dependencies:
     "@types/tern" "*"
 
